@@ -1,0 +1,7 @@
+res://scenes/main/main.tscn
+res://resources/tileset.tres
+res://scenes/player/player.tscn
+res://scenes/game_camera/game_camera.tscn
+res://scenes/game_camera/game_camera.gd
+res://scenes/basic_enemy/basic_enemy.gd
+res://scenes/basic_enemy/basic_enemy.tscn
