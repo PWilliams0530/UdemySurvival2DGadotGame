@@ -8,3 +8,10 @@ res://scenes/ability/sword_ability/sword_ability.tscn
 res://scenes/manager/arena_time_manager.tscn
 res://scenes/main/main.tscn
 res://scenes/manager/arena_time_manager.gd
+res://scenes/game_objects/experience_vial/experience_vial.tscn
+res://scenes/game_objects/experience_vial/experience_vial.gd
+res://scenes/game_objects/player/player.tscn
+res://scenes/manager/experience_manager.gd
+res://scenes/auto_load/game_events.tscn
+res://scenes/auto_load/game_events.gd
+res://scenes/manager/experience_manager.tscn
