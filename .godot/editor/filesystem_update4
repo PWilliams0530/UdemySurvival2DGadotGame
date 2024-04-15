@@ -22,3 +22,11 @@ res://scenes/ability/sword_ability/sword_ability.gd
 res://scenes/UI/experience_bar.tscn
 res://scenes/manager/experience_manager.gd
 res://scenes/UI/experience_bar.gd
+res://resources/upgrades/sword_rate.tres
+res://resources/upgrades/ability_upgrade.gd
+res://scenes/manager/upgrade_manager.tscn
+res://scenes/manager/upgrade_manager.gd
+res://scenes/UI/upgrade_screen.tscn
+res://scenes/UI/ability_upgrade_card.gd
+res://scenes/UI/upgrade_screen.gd
+res://scenes/UI/ability_upgrade_card.tscn
