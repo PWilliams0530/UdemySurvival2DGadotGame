@@ -7,3 +7,11 @@ res://scenes/UI/upgrade_screen.tscn
 res://scenes/UI/ability_upgrade_card.tscn
 res://scenes/manager/upgrade_manager.gd
 res://scenes/UI/upgrade_screen.gd
+res://scenes/UI/ability_upgrade_card.gd
+res://scenes/auto_load/game_events.tscn
+res://scenes/auto_load/game_events.gd
+res://scenes/ability/sword_ability_controller/sword_ability_controller.gd
+res://scenes/ability/sword_ability_controller/sword_ability_controller.tscn
+res://scenes/manager/enemy_manager.gd
+res://scenes/component/vial_drop_component.gd
+res://scenes/component/vial_drop_component.tscn
