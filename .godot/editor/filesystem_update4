@@ -21,3 +21,10 @@ res://scenes/manager/enemy_manager.tscn
 res://scenes/game_objects/player/player.tscn
 res://scenes/game_objects/player/player.gd
 res://scenes/component/health_component.gd
+res://scenes/manager/arena_time_manager.tscn
+res://scenes/manager/arena_time_manager.gd
+res://scenes/UI/victory_screen.gd
+res://scenes/UI/victory_screen.tscn
+res://scenes/UI/end_screen.tscn
+res://scenes/UI/end_screen.gd
+res://scenes/main/main.gd
