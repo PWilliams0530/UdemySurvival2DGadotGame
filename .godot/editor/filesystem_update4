@@ -28,3 +28,4 @@ res://scenes/UI/victory_screen.tscn
 res://scenes/UI/end_screen.tscn
 res://scenes/UI/end_screen.gd
 res://scenes/main/main.gd
+res://scenes/UI/arena_time_ui.tscn
