@@ -18,10 +18,10 @@ func get_spawn_position():
 	if player == null:
 		return Vector2.ZERO
 		
-	var spawn_position = Vector2.ZERO
-	var random_direction = Vector2.RIGHT.rotated(randf_range(0,TAU)) # get random direction
+	var spawn_position = Vector2.ZERO # get random direction
 	
 	for i in 4:
+		var random_direction = Vector2.RIGHT.rotated(randf_range(0,TAU))
 		spawn_position = player.global_position + (random_direction * SPAWN_RADIUS) #go in random direction from player radius pixels
 	#bitwise operators
 		var query_paramaters = PhysicsRayQueryParameters2D.create(player.global_position, spawn_position,1)

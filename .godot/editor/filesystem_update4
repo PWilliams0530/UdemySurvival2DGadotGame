@@ -8,3 +8,4 @@ res://scenes/manager/experience_manager.tscn
 res://scenes/manager/upgrade_manager.tscn
 res://scenes/UI/arena_time_ui.tscn
 res://scenes/UI/ability_upgrade_card.tscn
+res://scenes/manager/enemy_manager.gd
