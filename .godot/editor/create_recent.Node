@@ -1,3 +1,4 @@
+Node2D
 Sprite2D
 Timer
 Node
@@ -11,5 +12,3 @@ CanvasLayer
 ProgressBar
 Area2D
 CollisionShape2D
-Node2D
-HBoxContainer

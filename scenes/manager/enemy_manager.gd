@@ -1,5 +1,5 @@
 extends Node
-const SPAWN_RADIUS = 250 #spawn outside of window
+const SPAWN_RADIUS = 350 #spawn outside of window
 @export var basic_enemy_scene: PackedScene
 @export var arena_time_manager: Node
 
@@ -21,7 +21,7 @@ func get_spawn_position():
 	var spawn_position = Vector2.ZERO # get random direction
 	var random_direction = Vector2.RIGHT.rotated(randf_range(0,TAU))
 	
-	for i in 1000:
+	for i in 4:
 		spawn_position = player.global_position + (random_direction * SPAWN_RADIUS) #go in random direction from player radius pixels
 	#bitwise operators
 		var query_paramaters = PhysicsRayQueryParameters2D.create(player.global_position, spawn_position,1 << 0)
@@ -53,7 +53,6 @@ func on_timer_timeout():
 func on_arena_difficulty_increased(arena_difficulty: int):
 	var time_off = (.1/12) * arena_difficulty
 	time_off = min(time_off, .7)
-	print(time_off)
 	timer.wait_time = base_spawn_time - time_off
 	
 	
