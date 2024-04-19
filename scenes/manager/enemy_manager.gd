@@ -1,5 +1,5 @@
 extends Node
-const SPAWN_RADIUS = 375 #spawn outside of window
+const SPAWN_RADIUS = 250 #spawn outside of window
 @export var basic_enemy_scene: PackedScene
 @export var arena_time_manager: Node
 
@@ -19,21 +19,21 @@ func get_spawn_position():
 		return Vector2.ZERO
 		
 	var spawn_position = Vector2.ZERO # get random direction
+	var random_direction = Vector2.RIGHT.rotated(randf_range(0,TAU))
 	
-	for i in 4:
-		var random_direction = Vector2.RIGHT.rotated(randf_range(0,TAU))
+	for i in 1000:
 		spawn_position = player.global_position + (random_direction * SPAWN_RADIUS) #go in random direction from player radius pixels
 	#bitwise operators
-		var query_paramaters = PhysicsRayQueryParameters2D.create(player.global_position, spawn_position,1)
+		var query_paramaters = PhysicsRayQueryParameters2D.create(player.global_position, spawn_position,1 << 0)
 		var result = get_tree().root.world_2d.direct_space_state.intersect_ray(query_paramaters)
 		
 		if result.is_empty():
 		#we are clear
-			break
+			return spawn_position
 		else:
 			random_direction = random_direction.rotated(deg_to_rad(90))
-	
-	return spawn_position
+			
+	return Vector2.ZERO
 	
 func on_timer_timeout():
 	
@@ -42,8 +42,6 @@ func on_timer_timeout():
 	var player = get_tree().get_first_node_in_group("player") as Node2D #grab player
 	if player == null:
 		return
-	
-	
 	
 	var enemy = basic_enemy_scene.instantiate() as Node2D
 	
