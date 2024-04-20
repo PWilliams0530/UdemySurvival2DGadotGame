@@ -2,6 +2,8 @@ extends Node
 
 @export var axe_ability_scene: PackedScene
 
+var damage = 10
+
 func _ready():
 	$Timer.timeout.connect(on_timer_timeout)
 	
@@ -16,3 +18,4 @@ func on_timer_timeout():
 	foreground.add_child(axe_instance)
 	
 	axe_instance.global_position = player.global_position
+	axe_instance.hitbox_component.damage = damage
