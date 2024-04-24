@@ -19,3 +19,5 @@ res://resources/upgrades/ability.gd
 res://resources/upgrades/ability_upgrade.gd
 res://resources/upgrades/sword_rate.tres
 res://scenes/component/death_component.tscn
+res://scenes/component/death_component.gd
+res://scenes/game_objects/basic_enemy/basic_enemy.gd
