@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://begd7i02xlybi"]
+[gd_scene load_steps=15 format=3 uid="uid://begd7i02xlybi"]
 
 [ext_resource type="PackedScene" uid="uid://daomnp3blkx0k" path="res://scenes/game_objects/player/player.tscn" id="1_e145n"]
 [ext_resource type="TileSet" uid="uid://bdq0f7a2ucti4" path="res://resources/tileset.tres" id="1_g4wb4"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://dia2atumdc1l6" path="res://scenes/UI/experience_bar.tscn" id="2_l1q0w"]
 [ext_resource type="PackedScene" uid="uid://cwpx6tg3y6spu" path="res://scenes/manager/experience_manager.tscn" id="2_vtixs"]
 [ext_resource type="PackedScene" uid="uid://b2a3e82mnauq8" path="res://scenes/manager/upgrade_manager.tscn" id="6_ybet7"]
+[ext_resource type="PackedScene" uid="uid://b8wob0qa3onj6" path="res://scenes/game_objects/wizard_enemy/wizard_enemy.tscn" id="7_d01bt"]
+[ext_resource type="PackedScene" uid="uid://bwevb5r7qvg2u" path="res://scenes/game_objects/basic_enemy/basic_enemy.tscn" id="7_t581e"]
 [ext_resource type="PackedScene" uid="uid://d1dtgy87vfc1y" path="res://scenes/UI/upgrade_screen.tscn" id="7_vgqwr"]
 
 [node name="Main" type="Node"]
@@ -26,6 +28,8 @@ experience_manager = NodePath("../ExperienceManager")
 [node name="ArenaTimeManager" parent="." instance=ExtResource("2_5tupl")]
 
 [node name="EnemyManager" parent="." node_paths=PackedStringArray("arena_time_manager") instance=ExtResource("1_j50ul")]
+basic_enemy_scene = ExtResource("7_t581e")
+wizard_enemy_scene = ExtResource("7_d01bt")
 arena_time_manager = NodePath("../ArenaTimeManager")
 
 [node name="ExperienceManager" parent="." instance=ExtResource("2_vtixs")]

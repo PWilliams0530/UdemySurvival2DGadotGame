@@ -12,7 +12,6 @@ func _ready():
 func damage(damage_amount: float):
 	#takes higher of the current health or 0 to prevent negative health
 	current_health = max(current_health - damage_amount, 0)
-	print(current_health)
 	health_changed.emit()
 	Callable(check_death).call_deferred()
 	
