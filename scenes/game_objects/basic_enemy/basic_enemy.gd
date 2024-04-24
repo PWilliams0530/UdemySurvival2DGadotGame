@@ -1,8 +1,7 @@
 extends CharacterBody2D
 
-const MAX_SPEED = 40
-@onready var health_component = $HealthComponent
 @onready var visuals = $Visuals
+@onready var velocity_component = $VelocityComponent
 
 # Called when the node enters the scene tree for the first time.
 #func _ready():
@@ -11,22 +10,13 @@ const MAX_SPEED = 40
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var direction = get_direction_to_player()
-	velocity = direction * MAX_SPEED
-	move_and_slide()
+	velocity_component.accelerate_to_player()
+	velocity_component.move(self)
 	
 	#makes rats go the way they are moving
 	var move_sign = sign(velocity.x)
 	if move_sign != 0:
 		visuals.scale = Vector2(-move_sign,1)
-	
-
-func get_direction_to_player():
-	var player_node = get_tree().get_first_node_in_group("player") as Node2D
-	if player_node != null:
-		return (player_node.global_position - global_position).normalized()
-	else:
-		return Vector2.ZERO
 
 #func on_area_entered(other_area: Area2D):
 	#health_component.damage(100)
