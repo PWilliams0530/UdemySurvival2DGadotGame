@@ -18,3 +18,4 @@ res://resources/upgrades/axe.tres
 res://resources/upgrades/ability.gd
 res://resources/upgrades/ability_upgrade.gd
 res://resources/upgrades/sword_rate.tres
+res://scenes/component/death_component.tscn
