@@ -1,3 +1,9 @@
 res://scenes/component/vial_drop_component.tscn
 res://scenes/game_objects/experience_vial/experience_vial.tscn
 res://scenes/UI/arena_time_ui.tscn
+res://floating_text.tscn
+res://floating_text.gd
+res://scenes/component/hurt_box_component.gd
+res://scenes/UI/floating_text.tscn
+res://scenes/component/hurt_box_component.tscn
+res://scenes/UI/floating_text.gd
