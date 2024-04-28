@@ -1,8 +1,8 @@
+res://scenes/component
+res://scenes/game_objects/wizard_enemy
 res://
 res://resources/theme
 res://resources/theme/
-res://scenes/component
-res://scenes/game_objects/wizard_enemy
 res://scenes/game_objects
 res://scenes/game_objects/basic_enemy
 res://scenes/ability/axe_ability
