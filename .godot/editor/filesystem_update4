@@ -13,3 +13,13 @@ res://scenes/component/hit_flash_component.gd
 res://scenes/game_objects/basic_enemy/basic_enemy.tscn
 res://scenes/component/hit_flash_component_material.tres
 res://scenes/game_objects/wizard_enemy/wizard_enemy.tscn
+res://scenes/manager/upgrade_manager.tscn
+res://resources/upgrades/sword_damage.tres
+res://resources/upgrades/sword_rate.tres
+res://scenes/manager/upgrade_manager.gd
+res://scripts/weighted_table.gd
+res://resources/upgrades/axe_damage.tres
+res://scenes/ability/axe_ability_controller/axe_ability_controller.gd
+res://scenes/ability/sword_ability_controller/sword_ability_controller.gd
+res://scenes/ability/sword_ability_controller/sword_ability_controller.tscn
+res://scenes/ability/axe_ability_controller/axe_ability_controller.tscn
