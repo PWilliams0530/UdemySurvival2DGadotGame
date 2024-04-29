@@ -25,3 +25,5 @@ res://scenes/ability/sword_ability_controller/sword_ability_controller.tscn
 res://scenes/ability/axe_ability_controller/axe_ability_controller.tscn
 res://scenes/UI/ability_upgrade_card.tscn
 res://resources/theme/theme.tres
+res://scenes/UI/ability_upgrade_card.gd
+res://scenes/UI/upgrade_screen.tscn

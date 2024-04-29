@@ -47,7 +47,6 @@ func update_upgrade_pool(chosen_upgrade : AbilityUpgrade):
 
 func pick_upgrades():
 	var chosen_upgrades : Array[AbilityUpgrade] = []
-
 	for i in 2:
 		if upgrade_pool.items.size() == chosen_upgrades.size():
 			break;
