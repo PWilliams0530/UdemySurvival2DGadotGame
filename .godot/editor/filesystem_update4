@@ -32,3 +32,4 @@ res://scenes/UI/experience_bar.tscn
 res://scenes/game_objects/player/player.tscn
 res://scenes/component/health_component.tscn
 res://scenes/UI/end_screen.tscn
+res://scenes/UI/end_screen.gd
