@@ -36,3 +36,10 @@ res://scenes/UI/end_screen.gd
 res://scenes/game_objects/player/player.gd
 res://scenes/component/velocity_component.tscn
 res://resources/upgrades/player_speed.tres
+res://scenes/UI/vignette.tscn
+res://scenes/UI/vignette.gdshader
+res://scenes/main/main.tscn
+res://resources/tileset.tres
+res://scenes/auto_load/game_events.tscn
+res://scenes/auto_load/game_events.gd
+res://scenes/UI/vignette.gd

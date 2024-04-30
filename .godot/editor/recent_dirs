@@ -1,3 +1,4 @@
+res://scenes/UI
 res://scenes/component
 res://scenes/game_objects/wizard_enemy
 res://
@@ -7,7 +8,6 @@ res://scenes/game_objects
 res://scenes/game_objects/basic_enemy
 res://scenes/ability/axe_ability
 res://scenes/ability/axe_ability_controller
-res://scenes/UI
 res://scenes/manager
 res://resources/upgrades/
 res://scenes/auto_load

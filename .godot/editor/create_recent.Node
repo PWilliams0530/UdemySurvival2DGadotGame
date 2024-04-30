@@ -1,6 +1,7 @@
-VBoxContainer
 AnimationPlayer
 ColorRect
+CanvasLayer
+VBoxContainer
 MarginContainer
 PanelContainer
 Node
@@ -11,5 +12,3 @@ CollisionShape2D
 HurtboxComponent
 CharacterBody2D
 GPUParticles2D
-HitboxComponent
-Timer

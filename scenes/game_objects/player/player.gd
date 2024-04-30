@@ -76,6 +76,7 @@ func on_damage_intererval_timer_timeout():
 	check_deal_damage()
 	
 func on_health_changed():
+	GameEvents.emit_player_damaged()
 	update_health_display()
 
 func on_ability_upgrade_added(ability_upgrade : AbilityUpgrade, current_upgrades : Dictionary):
