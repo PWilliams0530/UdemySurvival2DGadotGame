@@ -1,10 +1,10 @@
+AnimationPlayer
 MarginContainer
 PanelContainer
 Node
 Sprite2D
 Node2D
 Label
-AnimationPlayer
 CollisionShape2D
 HurtboxComponent
 CharacterBody2D

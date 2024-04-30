@@ -27,3 +27,4 @@ res://scenes/UI/ability_upgrade_card.tscn
 res://resources/theme/theme.tres
 res://scenes/UI/ability_upgrade_card.gd
 res://scenes/UI/upgrade_screen.tscn
+res://scenes/UI/upgrade_screen.gd
