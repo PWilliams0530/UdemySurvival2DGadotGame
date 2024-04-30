@@ -1,4 +1,5 @@
 AnimationPlayer
+ColorRect
 MarginContainer
 PanelContainer
 Node
@@ -11,4 +12,3 @@ CharacterBody2D
 GPUParticles2D
 HitboxComponent
 Timer
-Button
