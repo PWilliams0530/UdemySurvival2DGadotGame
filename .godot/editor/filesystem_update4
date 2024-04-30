@@ -33,3 +33,6 @@ res://scenes/game_objects/player/player.tscn
 res://scenes/component/health_component.tscn
 res://scenes/UI/end_screen.tscn
 res://scenes/UI/end_screen.gd
+res://scenes/game_objects/player/player.gd
+res://scenes/component/velocity_component.tscn
+res://resources/upgrades/player_speed.tres
