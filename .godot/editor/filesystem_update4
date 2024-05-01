@@ -30,3 +30,4 @@ res://scenes/UI/sound_button.tscn
 res://scenes/component/random_stream_player_component.gd
 res://scenes/UI/sound_button.gd
 res://scenes/component/random_stream_player_component.tscn
+res://scenes/UI/ability_upgrade_card.tscn
