@@ -17,3 +17,9 @@ res://default_bus_layout.tres
 res://scenes/game_objects/basic_enemy/basic_enemy.tscn
 res://scenes/game_objects/basic_enemy/basic_enemy.gd
 res://scenes/component/hurt_box_component.gd
+res://scenes/component/random_stream_player_2d_component.tscn
+res://scenes/component/random_stream_player_2d_component.gd
+res://scenes/component/death_component.gd
+res://scenes/component/death_component.tscn
+res://scenes/game_objects/wizard_enemy/wizard_enemy.tscn
+res://scenes/game_objects/wizard_enemy/wizard_enemy.gd

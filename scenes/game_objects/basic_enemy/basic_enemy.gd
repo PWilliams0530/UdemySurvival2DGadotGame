@@ -25,4 +25,4 @@ func _process(delta):
 	#health_component.damage(100)
 	
 func on_hit():
-	$AudioStreamPlayer2D.play()
+	$HitRandomAudioPlayerComponent.play_random()
