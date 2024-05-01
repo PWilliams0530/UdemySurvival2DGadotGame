@@ -23,3 +23,4 @@ res://scenes/component/death_component.gd
 res://scenes/component/death_component.tscn
 res://scenes/game_objects/wizard_enemy/wizard_enemy.tscn
 res://scenes/game_objects/wizard_enemy/wizard_enemy.gd
+res://scenes/game_objects/player/player.gd
