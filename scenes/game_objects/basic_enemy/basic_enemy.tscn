@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bwevb5r7qvg2u"]
+[gd_scene load_steps=17 format=3 uid="uid://bwevb5r7qvg2u"]
 
 [ext_resource type="Script" path="res://scenes/game_objects/basic_enemy/basic_enemy.gd" id="1_61cov"]
 [ext_resource type="PackedScene" uid="uid://bqc54jdrffeb7" path="res://scenes/component/health_component.tscn" id="2_an6nx"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://blf3sg8tdsaa" path="res://scenes/component/velocity_component.tscn" id="4_mft3r"]
 [ext_resource type="PackedScene" uid="uid://de5sdtyp5kxrm" path="res://scenes/component/hit_flash_component.tscn" id="5_8broy"]
 [ext_resource type="Shader" path="res://scenes/component/hit_flash_component.gdshader" id="6_dhatc"]
+[ext_resource type="AudioStream" uid="uid://l67dbkra84fd" path="res://assets/audio/footstep_carpet_000.ogg" id="10_fo8c0"]
 
 [sub_resource type="Animation" id="Animation_egcws"]
 length = 0.001
@@ -128,3 +129,7 @@ offset = Vector2(0, -4)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_3nw0m")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_fo8c0")
+bus = &"sfx"
