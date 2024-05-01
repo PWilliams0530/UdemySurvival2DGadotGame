@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://batrucbjj252y"]
+
+[ext_resource type="AudioStream" uid="uid://dq8gvlggieomh" path="res://assets/audio/Imposter_4.mp3" id="1_nkdsu"]
+[ext_resource type="Script" path="res://scenes/auto_load/music_player.gd" id="2_ipy8k"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+process_mode = 3
+stream = ExtResource("1_nkdsu")
+volume_db = -20.0
+autoplay = true
+bus = &"music"
+script = ExtResource("2_ipy8k")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
