@@ -31,3 +31,6 @@ res://scenes/component/random_stream_player_component.gd
 res://scenes/UI/sound_button.gd
 res://scenes/component/random_stream_player_component.tscn
 res://scenes/UI/ability_upgrade_card.tscn
+res://scenes/manager/arena_time_manager.gd
+res://scenes/UI/end_screen.gd
+res://scenes/manager/arena_time_manager.tscn
