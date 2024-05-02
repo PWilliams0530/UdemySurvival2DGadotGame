@@ -1,9 +1,10 @@
-res://scenes/UI/options_menu.tscn
+res://scenes/auto_load/screen_transition.tscn
 res://resources/theme/theme.tres
+res://scenes/auto_load/screen_transition.gdshader
 res://resources/tileset.tres
+res://scenes/UI/vignette.gdshader
 res://scenes/component/hit_flash_component.gdshader
 res://scenes/component/hit_flash_component_material.tres
-res://scenes/UI/vignette.gdshader
 res://scenes/main/main.tscn
 res://scenes/game_objects/player/player.tscn
 res://scenes/game_objects/experience_vial/experience_vial.tscn
@@ -11,8 +12,12 @@ res://scenes/UI/sound_button.tscn
 res://scenes/component/random_stream_player_component.tscn
 res://scenes/UI/end_screen.tscn
 res://scenes/UI/ability_upgrade_card.tscn
+res://scenes/UI/options_menu.tscn
 res://scenes/UI/main_menu.tscn
 res://scenes/UI/pause_menu.tscn
-res://scenes/main/main.gd
-res://scenes/UI/pause_menu.gd
 res://scenes/UI/upgrade_screen.tscn
+res://scenes/UI/main_menu.gd
+res://scenes/UI/options_menu.gd
+res://scenes/UI/pause_menu.gd
+res://scenes/UI/end_screen.gd
+res://scenes/auto_load/screen_transition.gd
