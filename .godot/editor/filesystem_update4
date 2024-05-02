@@ -40,3 +40,5 @@ res://scenes/ability/axe_ability/axe_ability.tscn
 res://scenes/ability/axe_ability_controller/axe_ability_controller.tscn
 res://scenes/UI/main_menu.tscn
 res://scenes/UI/main_menu.gd
+res://scenes/UI/options_menu.tscn
+res://scenes/UI/options_menu.gd
