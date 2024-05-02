@@ -6,9 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://cdehlrqomxyko" path="res://scenes/UI/sound_button.tscn" id="3_ot6wl"]
 
 [node name="OptionsMenu" type="CanvasLayer"]
+layer = 2
 script = ExtResource("1_k0pq6")
 
 [node name="Vignette" parent="." instance=ExtResource("2_8lavr")]
+layer = 3
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("2_3ekra")
