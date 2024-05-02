@@ -21,3 +21,7 @@ res://scenes/UI/options_menu.gd
 res://scenes/UI/pause_menu.gd
 res://scenes/UI/end_screen.gd
 res://scenes/auto_load/screen_transition.gd
+res://scenes/auto_load/meta_progression.tscn
+res://resources/meta_upgrades/meta_upgrade.gd
+res://resources/meta_upgrades/experience_gain.tres
+res://scenes/auto_load/meta_progression.gd

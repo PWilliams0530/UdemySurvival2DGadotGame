@@ -1,4 +1,5 @@
 res://scenes/auto_load
+res://resources/meta_upgrades/
 res://scenes/UI
 res://scenes/component
 res://scenes/game_objects/wizard_enemy

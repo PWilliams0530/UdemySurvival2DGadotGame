@@ -1,3 +1,4 @@
+Node
 AnimationPlayer
 ColorRect
 CanvasLayer
@@ -10,5 +11,4 @@ Timer
 AudioStreamPlayer
 Button
 AudioStreamPlayer2D
-Node
 Sprite2D
