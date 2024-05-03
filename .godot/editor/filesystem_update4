@@ -25,3 +25,5 @@ res://scenes/auto_load/meta_progression.tscn
 res://resources/meta_upgrades/meta_upgrade.gd
 res://resources/meta_upgrades/experience_gain.tres
 res://scenes/auto_load/meta_progression.gd
+res://scenes/manager/arena_time_manager.tscn
+res://scenes/manager/arena_time_manager.gd
