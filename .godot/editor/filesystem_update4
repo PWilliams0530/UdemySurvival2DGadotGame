@@ -22,3 +22,6 @@ res://scenes/game_objects/basic_enemy/basic_enemy.tscn
 res://scenes/auto_load/meta_progression.gd
 res://scenes/component/vial_drop_component.gd
 res://scenes/component/vial_drop_component.tscn
+res://scenes/UI/meta_menu.gd
+res://scenes/manager/enemy_manager.gd
+res://scenes/manager/enemy_manager.tscn
