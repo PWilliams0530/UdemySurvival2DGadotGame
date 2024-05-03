@@ -30,3 +30,5 @@ res://scenes/manager/arena_time_manager.gd
 res://scenes/UI/meta_upgrade_card.tscn
 res://scenes/main/main.gd
 res://scenes/UI/meta_upgrade_card.gd
+res://scenes/UI/meta_menu.tscn
+res://scenes/UI/meta_menu.gd
