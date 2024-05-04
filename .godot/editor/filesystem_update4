@@ -25,3 +25,7 @@ res://scenes/component/vial_drop_component.tscn
 res://scenes/UI/meta_menu.gd
 res://scenes/manager/enemy_manager.gd
 res://scenes/manager/enemy_manager.tscn
+res://scenes/UI/options_menu.gd
+res://scenes/game_objects/bat_enemy/bat_enemy.tscn
+res://scenes/game_objects/bat_enemy/bat_enemy.gd
+res://scenes/game_objects/wizard_enemy/wizard_enemy.tscn
