@@ -1,3 +1,9 @@
+Timer
+Node2D
+AnimationPlayer
+CollisionShape2D
+HitboxComponent
+Sprite2D
 ScrollContainer
 Button
 Label
@@ -7,9 +13,3 @@ VBoxContainer
 Control
 MarginContainer
 TextureRect
-ProgressBar
-Node
-AnimationPlayer
-ColorRect
-CanvasLayer
-HSlider
