@@ -1,5 +1,6 @@
 extends Node
 
+
 const DIFFICULTY_INTERVAL = 5
 
 signal arena_difficulty_increased(arena_difficulty : int)

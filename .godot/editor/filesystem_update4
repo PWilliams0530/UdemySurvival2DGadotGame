@@ -37,3 +37,10 @@ res://scenes/ability/anvil_ability/anvil_ability.gd
 res://scenes/manager/upgrade_manager.tscn
 res://resources/upgrades/anvil.tres
 res://scenes/manager/upgrade_manager.gd
+res://resources/meta_upgrades/health_regneration.tres
+res://scenes/manager/arena_time_manager.gd
+res://scenes/game_objects/player/player.gd
+res://scenes/component/health_component.gd
+res://scenes/component/hit_flash_component.gd
+res://scenes/component/health_component.tscn
+res://scenes/component/hit_flash_component.tscn
