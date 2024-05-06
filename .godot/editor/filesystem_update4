@@ -46,3 +46,4 @@ res://scenes/component/health_component.tscn
 res://scenes/component/hit_flash_component.tscn
 res://resources/upgrades/anvil_amount.tres
 res://scenes/ability/sword_ability_controller/sword_ability_controller.tscn
+res://scenes/UI/meta_upgrade_card.gd
