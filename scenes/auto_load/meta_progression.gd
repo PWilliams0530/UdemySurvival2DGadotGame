@@ -10,7 +10,6 @@ var save_data : Dictionary = {
 func _ready():
 	GameEvents.experience_vial_collected.connect(on_experience_collected)
 	load_save_file()
-	on_experience_collected(10000)
 	
 func load_save_file():
 	if !FileAccess.file_exists(SAVE_FILE_PATH):
