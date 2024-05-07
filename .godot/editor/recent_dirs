@@ -1,3 +1,6 @@
+res://scenes/ability/anvil_ability_controller
+res://scenes/ability/dagger_ability_controller
+res://scenes/ability/dagger_ability
 res://resources/meta_upgrades
 res://scenes/ability/anvil_ability
 res://
@@ -17,5 +20,3 @@ res://resources/upgrades/
 res://scenes/game_objects/experience_vial
 res://scenes/ability/sword_ability_controller
 res://scenes/ability/sword_ability
-res://resources/
-res://scenes/main
