@@ -11,7 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://bblr8rasornbt" path="res://assets/audio/impactMining_002.ogg" id="7_fhw0n"]
 [ext_resource type="AudioStream" uid="uid://ba75c603t08wd" path="res://assets/audio/impactMining_003.ogg" id="8_a6quh"]
 [ext_resource type="AudioStream" uid="uid://5ox6xxasdp8v" path="res://assets/audio/impactMining_004.ogg" id="9_7t6cw"]
-[ext_resource type="PackedScene" uid="uid://bdermrvgjn0l0" path="res://scenes/ability/dagger_ability_controller/dagger_ability_controller.tscn" id="11_lchxb"]
+[ext_resource type="PackedScene" uid="uid://c4d4rc2mrb7o5" path="res://scenes/ability/arrow_ability_controller/arrow_ability_controller.tscn" id="12_d3r6x"]
 
 [sub_resource type="Animation" id="Animation_rlw8w"]
 length = 0.001
@@ -131,7 +131,7 @@ streams = Array[AudioStream]([ExtResource("5_pbhet"), ExtResource("6_e8r8e"), Ex
 
 [node name="SwordAbilityController" parent="Abilities" instance=ExtResource("2_1rxl0")]
 
-[node name="DaggerAbilityController" parent="Abilities" instance=ExtResource("11_lchxb")]
+[node name="ArrowAbilityController" parent="Abilities" instance=ExtResource("12_d3r6x")]
 
 [node name="DamageIntervalTimer" type="Timer" parent="."]
 wait_time = 0.5

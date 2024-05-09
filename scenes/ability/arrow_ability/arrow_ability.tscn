@@ -1,0 +1,107 @@
+[gd_scene load_steps=10 format=3 uid="uid://drdb8y44rmga8"]
+
+[ext_resource type="Script" path="res://scenes/ability/arrow_ability/arrow_ability.gd" id="1_6wfp1"]
+[ext_resource type="Texture2D" uid="uid://dgr2bpnfkhj2k" path="res://scenes/ability/arrow_ability/arrow.png" id="2_amohb"]
+[ext_resource type="PackedScene" uid="uid://blf3sg8tdsaa" path="res://scenes/component/velocity_component.tscn" id="2_etum2"]
+[ext_resource type="PackedScene" uid="uid://dwqirup56qmo6" path="res://scenes/component/hitbox_component.tscn" id="3_6ktjm"]
+
+[sub_resource type="Animation" id="Animation_ncyn4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HitboxComponent/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -4)]
+}
+
+[sub_resource type="Animation" id="Animation_aqnaq"]
+resource_name = "attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -10)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HitboxComponent/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -4), Vector2(0, -14)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ys1wm"]
+_data = {
+"RESET": SubResource("Animation_ncyn4"),
+"attack": SubResource("Animation_aqnaq")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0i5bx"]
+size = Vector2(6, 8)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nejvn"]
+radius = 3.0
+
+[node name="ArrowAbility" type="Area2D"]
+rotation = 1.5708
+collision_layer = 5
+script = ExtResource("1_6wfp1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ys1wm")
+}
+
+[node name="VelocityComponent" parent="." instance=ExtResource("2_etum2")]
+max_speed = 250
+acceleration = 100.0
+
+[node name="Visuals" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Visuals"]
+texture = ExtResource("2_amohb")
+
+[node name="HitboxComponent" parent="." instance=ExtResource("3_6ktjm")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
+visible = false
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_0i5bx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 0
+visibility_layer = 0
+position = Vector2(-1.74846e-07, -4)
+shape = SubResource("CircleShape2D_nejvn")
+
+[connection signal="area_entered" from="." to="HitboxComponent" method="_on_arrow_ability_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

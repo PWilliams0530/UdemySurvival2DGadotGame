@@ -1,11 +1,9 @@
 extends Node
 
 const BASE_RANGE = 100
-const BASE_DAMAGE = 8
+const BASE_DAMAGE = 4
 
 @export var dagger_ability_scene : PackedScene
-
-var dagger_count = 5
 
 func _ready():
 	$Timer.timeout.connect(on_timer_timeout)

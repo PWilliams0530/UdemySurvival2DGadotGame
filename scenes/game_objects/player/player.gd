@@ -12,6 +12,7 @@ extends CharacterBody2D
 
 var number_colliding_bodies = 0
 var base_speed = 0
+var most_recent_movement = Vector2(1,0)
 
 
 
@@ -55,9 +56,13 @@ func get_movement_vector():
 	var x_movement = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	#y is positive - positive goes first
 	var y_movement = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
-	return Vector2(x_movement,y_movement)
 	
-
+	var captured_movement = Vector2(x_movement,y_movement)
+	if captured_movement != Vector2(0,0):
+		most_recent_movement = captured_movement
+	
+	return captured_movement
+	
 func on_body_entered(other_body: Node2D):
 	number_colliding_bodies += 1
 	check_deal_damage()
