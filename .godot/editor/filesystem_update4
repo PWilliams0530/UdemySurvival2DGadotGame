@@ -25,3 +25,4 @@ res://scenes/component/hitbox_component.gd
 res://scenes/game_objects/basic_enemy/basic_enemy.gd
 res://resources/upgrades/arrow.tres
 res://scenes/manager/upgrade_manager.gd
+res://resources/upgrades/axe.tres

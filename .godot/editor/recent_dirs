@@ -1,3 +1,4 @@
+res://scenes/ability/axe_ability_controller
 res://scenes/ability/arrow_ability_controller
 res://scenes/ability/arrow_ability
 res://scenes/ability/anvil_ability_controller
@@ -16,7 +17,6 @@ res://resources/theme/
 res://scenes/game_objects
 res://scenes/game_objects/basic_enemy
 res://scenes/ability/axe_ability
-res://scenes/ability/axe_ability_controller
 res://scenes/manager
 res://resources/upgrades/
 res://scenes/game_objects/experience_vial
