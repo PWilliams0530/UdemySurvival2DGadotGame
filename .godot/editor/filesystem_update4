@@ -26,3 +26,11 @@ res://scenes/game_objects/basic_enemy/basic_enemy.gd
 res://resources/upgrades/arrow.tres
 res://scenes/manager/upgrade_manager.gd
 res://resources/upgrades/axe.tres
+res://scenes/ability/explosive_arrow_ability/arrow_ability.tscn
+res://scenes/ability/explosive_arrow_ability_controller/explosive_arrow_ability_controller.tscn
+res://scenes/ability/explosive_arrow_ability/explosive_arrow_ability.gd
+res://scenes/ability/explosive_arrow_ability/explosive_arrow_ability.tscn
+res://scenes/component/explosion_component.tscn
+res://scenes/component/explosion_component.gd
+res://scenes/ability/anvil_ability_controller/anvil_ability_controller.tscn
+res://scenes/ability/explosive_arrow_ability_controller/explosive_arrow_ability_controller.gd

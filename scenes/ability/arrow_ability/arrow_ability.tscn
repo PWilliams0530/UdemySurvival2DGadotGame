@@ -1,8 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://drdb8y44rmga8"]
+[gd_scene load_steps=10 format=3 uid="uid://2umanryv2dqm"]
 
-[ext_resource type="Script" path="res://scenes/ability/arrow_ability/arrow_ability.gd" id="1_6wfp1"]
-[ext_resource type="Texture2D" uid="uid://dgr2bpnfkhj2k" path="res://scenes/ability/arrow_ability/arrow.png" id="2_amohb"]
+[ext_resource type="Script" path="res://scenes/ability/explosive_arrow_ability/explosive_arrow_ability.gd" id="1_43ibp"]
 [ext_resource type="PackedScene" uid="uid://blf3sg8tdsaa" path="res://scenes/component/velocity_component.tscn" id="2_etum2"]
+[ext_resource type="Texture2D" uid="uid://dgr2bpnfkhj2k" path="res://scenes/ability/explosive_arrow_ability/arrow.png" id="3_myn7e"]
 [ext_resource type="PackedScene" uid="uid://b40uos7g0mix6" path="res://scenes/component/disposable_hitbox_component.tscn" id="4_6e3fp"]
 
 [sub_resource type="Animation" id="Animation_ncyn4"]
@@ -90,7 +90,7 @@ radius = 1.0
 
 [node name="ArrowAbility" type="Node2D"]
 rotation = 3.14159
-script = ExtResource("1_6wfp1")
+script = ExtResource("1_43ibp")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -105,7 +105,7 @@ acceleration = 100.0
 rotation = -1.5708
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
-texture = ExtResource("2_amohb")
+texture = ExtResource("3_myn7e")
 
 [node name="DisposableHitboxComponent" parent="." instance=ExtResource("4_6e3fp")]
 

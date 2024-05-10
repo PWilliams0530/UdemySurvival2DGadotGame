@@ -134,7 +134,7 @@ max_value = 1.5
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.267974, 1), 0.0, 0.0, 0, 0, Vector2(0.714597, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 4
 
-[sub_resource type="CurveTexture" id="CurveTexture_v24fq"]
+[sub_resource type="CurveTexture" id="CurveTexture_abg1o"]
 curve = SubResource("Curve_rgj4c")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_snvrm"]
@@ -147,7 +147,7 @@ initial_velocity_min = 100.0
 initial_velocity_max = 200.0
 gravity = Vector3(0, 0, 0)
 scale_min = 0.5
-scale_curve = SubResource("CurveTexture_v24fq")
+scale_curve = SubResource("CurveTexture_abg1o")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vbflt"]
 radius = 32.0

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnt50epku64sg"]
+
+[ext_resource type="Script" path="res://scenes/ability/explosive_arrow_ability_controller/explosive_arrow_ability_controller.gd" id="1_0c63e"]
+[ext_resource type="PackedScene" uid="uid://drdb8y44rmga8" path="res://scenes/ability/explosive_arrow_ability/explosive_arrow_ability.tscn" id="2_m1c3h"]
+
+[node name="ExplosiveArrowAbilityController" type="Node"]
+script = ExtResource("1_0c63e")
+arrow_ability_scene = ExtResource("2_m1c3h")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.25
+autostart = true

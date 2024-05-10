@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uok07cv1d8t"
-path="res://.godot/imported/arrow.png-73d34b8ac1128c00fc25444491786719.ctex"
+uid="uid://dgr2bpnfkhj2k"
+path="res://.godot/imported/arrow.png-e3518b820f3490ace126dd0fc547eb99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/ability/arrow_ability/arrow.png"
-dest_files=["res://.godot/imported/arrow.png-73d34b8ac1128c00fc25444491786719.ctex"]
+source_file="res://scenes/ability/explosive_arrow_ability/arrow.png"
+dest_files=["res://.godot/imported/arrow.png-e3518b820f3490ace126dd0fc547eb99.ctex"]
 
 [params]
 

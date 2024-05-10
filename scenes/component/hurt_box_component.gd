@@ -18,6 +18,8 @@ func on_area_entered(other_area: Area2D):
 		handle_disposable_hitbox_component(other_area)
 	elif other_area is HitboxComponent:
 		handle_hitbox_component(other_area)
+	elif other_area is ExplosionComponent:
+		handle_explosive_component(other_area)
 	else:
 		return
 	
@@ -60,7 +62,37 @@ func handle_disposable_hitbox_component(other_area):
 	floating_text.start(format_string % hitbox_component.damage)
 	hit.emit()
 	
-	other_area.get_parent().queue_free()
+	var animation_player = other_area.get_parent().get_node("AnimationPlayer") as AnimationPlayer
+	var area_name = other_area.get_parent().name
+
+	if area_name == "ExplosiveArrowAbility":
+		animation_player.play("EnableExplosionShape")
+	else:
+		animation_player.play("hit")
+	
+func handle_explosive_component(other_area):
+	if health_component == null:
+		return
+		
+	var animation_player = other_area.get_parent().get_node("AnimationPlayer") as AnimationPlayer
+	animation_player.queue("ExplosionAnimation")
+	
+	var explosive_component = other_area.get_parent().get_node("ExplosionComponent") as ExplosionComponent
+	health_component.damage(explosive_component.damage)
+	
+	var floating_text = floating_text_scene.instantiate() as Node2D
+	get_tree().get_first_node_in_group("foreground_layer").add_child(floating_text)
+	floating_text.global_position = global_position + (Vector2.UP * 16)
+	
+	var format_string = "%0.1f"
+	
+	if round(explosive_component.damage) == explosive_component.damage:
+		format_string = "%0.0f"
+		
+	floating_text.start(format_string % explosive_component.damage)
+	
+	hit.emit()
+	#var animation_player = other_area.get_parent().get_node("AnimationPlayer") as AnimationPlayer
 	
 	
 	
