@@ -22,3 +22,6 @@ res://scenes/ability/arrow_ability/RangedComponent.gd
 res://scenes/component/disposable_hitbox_component.tscn
 res://scenes/component/disposable_hitbox_component.gd
 res://scenes/component/hitbox_component.gd
+res://scenes/game_objects/basic_enemy/basic_enemy.gd
+res://resources/upgrades/arrow.tres
+res://scenes/manager/upgrade_manager.gd

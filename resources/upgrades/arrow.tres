@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Ability" load_steps=3 format=3 uid="uid://rf60eunvxn7"]
+
+[ext_resource type="PackedScene" uid="uid://c4d4rc2mrb7o5" path="res://scenes/ability/arrow_ability_controller/arrow_ability_controller.tscn" id="1_6vd1i"]
+[ext_resource type="Script" path="res://resources/upgrades/ability.gd" id="2_ulaol"]
+
+[resource]
+script = ExtResource("2_ulaol")
+ability_controller_scene = ExtResource("1_6vd1i")
+Id = "arrow"
+max_quantity = 1
+name = "Arrows"
+description = "Shoots arrows in the direction player is facing
+"

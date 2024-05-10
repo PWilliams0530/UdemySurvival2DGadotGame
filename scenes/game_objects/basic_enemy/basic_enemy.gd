@@ -20,9 +20,6 @@ func _process(delta):
 	var move_sign = sign(velocity.x)
 	if move_sign != 0:
 		visuals.scale = Vector2(-move_sign,1)
-
-#func on_area_entered(other_area: Area2D):
-	#health_component.damage(100)
 	
 func on_hit():
 	$HitRandomAudioPlayerComponent.play_random()

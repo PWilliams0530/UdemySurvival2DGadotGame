@@ -41,9 +41,10 @@ func handle_hitbox_component(other_area):
 	hit.emit()
 	
 func handle_disposable_hitbox_component(other_area):
+		
 	if health_component == null:
 		return
-		
+
 	var hitbox_component = other_area as DisposableHitboxComponent
 	health_component.damage(hitbox_component.damage)
 	
@@ -59,8 +60,7 @@ func handle_disposable_hitbox_component(other_area):
 	floating_text.start(format_string % hitbox_component.damage)
 	hit.emit()
 	
-	var parent = other_area.get_parent()
-	parent.queue_free()
+	other_area.get_parent().queue_free()
 	
 	
 	

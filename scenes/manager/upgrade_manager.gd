@@ -14,12 +14,14 @@ var upgrade_player_speed = preload("res://resources/upgrades/player_speed.tres")
 var upgrade_anvil = preload("res://resources/upgrades/anvil.tres")
 var upgrade_anvil_count = preload("res://resources/upgrades/anvil_amount.tres")
 var upgrade_daggers = preload("res://resources/upgrades/daggers.tres")
+var upgrade_arrow = preload("res://resources/upgrades/arrow.tres")
 
 func _ready():
 	
 	upgrade_pool.add_item(upgrade_axe,10)
 	upgrade_pool.add_item(upgrade_anvil,10)
 	upgrade_pool.add_item(upgrade_daggers,10)
+	upgrade_pool.add_item(upgrade_arrow,10)
 	upgrade_pool.add_item(upgrade_sword_rate,10)
 	upgrade_pool.add_item(upgrade_sword_damage,10)
 	upgrade_pool.add_item(upgrade_player_speed,5)

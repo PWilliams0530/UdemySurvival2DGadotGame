@@ -1,7 +1,7 @@
 extends Node
 
 const BASE_RANGE = 100
-const BASE_DAMAGE = 50
+const BASE_DAMAGE = 20
 var speed = 400
 
 @export var arrow_ability_scene : PackedScene
@@ -51,8 +51,5 @@ func get_sprite_direction(vector):
 		return -135
 	else:
 		return 0
-		
-func on_arrow_hit():
-	arrow_ability.queue_free()
 
 

@@ -1,3 +1,4 @@
+res://scenes/ability/arrow_ability_controller
 res://scenes/ability/arrow_ability
 res://scenes/ability/anvil_ability_controller
 res://scenes/ability/dagger_ability_controller
@@ -19,4 +20,3 @@ res://scenes/ability/axe_ability_controller
 res://scenes/manager
 res://resources/upgrades/
 res://scenes/game_objects/experience_vial
-res://scenes/ability/sword_ability_controller
