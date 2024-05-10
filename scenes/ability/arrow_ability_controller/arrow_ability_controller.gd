@@ -5,7 +5,7 @@ const BASE_DAMAGE = 50
 var speed = 400
 
 @export var arrow_ability_scene : PackedScene
-var arrow_ability : ArrowAbility
+@onready var arrow_ability : ArrowAbility
 
 func _ready():
 	$Timer.timeout.connect(on_timer_timeout)
@@ -13,6 +13,9 @@ func _ready():
 	
 func on_timer_timeout():
 	
+	if arrow_ability != null:
+		arrow_ability.queue_free()
+		
 	var player = get_tree().get_first_node_in_group("player") as Node2D
 	if player == null:
 		return
@@ -49,5 +52,7 @@ func get_sprite_direction(vector):
 	else:
 		return 0
 		
+func on_arrow_hit():
+	arrow_ability.queue_free()
 
 

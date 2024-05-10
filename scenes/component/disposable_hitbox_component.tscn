@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b40uos7g0mix6"]
+
+[ext_resource type="Script" path="res://scenes/component/disposable_hitbox_component.gd" id="1_nfjw4"]
+
+[node name="DisposableHitboxComponent" type="Area2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_nfjw4")
