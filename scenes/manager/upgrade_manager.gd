@@ -22,7 +22,7 @@ func _ready():
 	upgrade_pool.add_item(upgrade_axe,10)
 	upgrade_pool.add_item(upgrade_anvil,10)
 	upgrade_pool.add_item(upgrade_daggers,10)
-	upgrade_pool.add_item(upgrade_arrow,10000)
+	upgrade_pool.add_item(upgrade_arrow,10)
 	upgrade_pool.add_item(upgrade_sword_rate,10)
 	upgrade_pool.add_item(upgrade_sword_damage,10)
 	upgrade_pool.add_item(upgrade_player_speed,5)
@@ -56,7 +56,7 @@ func update_upgrade_pool(chosen_upgrade : AbilityUpgrade):
 	elif chosen_upgrade.Id == upgrade_anvil.Id:
 		upgrade_pool.add_item(upgrade_anvil_count,5)
 	elif chosen_upgrade.Id == upgrade_arrow.Id:
-		upgrade_pool.add_item(upgrade_arrow_to_explosive,100000)
+		upgrade_pool.add_item(upgrade_arrow_to_explosive,10)
 	
 
 func pick_upgrades():
