@@ -15,6 +15,7 @@ var upgrade_anvil = preload("res://resources/upgrades/anvil.tres")
 var upgrade_anvil_count = preload("res://resources/upgrades/anvil_amount.tres")
 var upgrade_daggers = preload("res://resources/upgrades/daggers.tres")
 var upgrade_arrow = preload("res://resources/upgrades/arrow.tres")
+var upgrade_arrow_to_explosive = preload("res://resources/upgrades/explosive_arrow.tres")
 
 func _ready():
 	
@@ -54,6 +55,8 @@ func update_upgrade_pool(chosen_upgrade : AbilityUpgrade):
 		upgrade_pool.add_item(upgrade_axe_damage,10)
 	elif chosen_upgrade.Id == upgrade_anvil.Id:
 		upgrade_pool.add_item(upgrade_anvil_count,5)
+	elif chosen_upgrade.Id == upgrade_arrow.Id:
+		upgrade_pool.add_item(upgrade_arrow_to_explosive,100000)
 	
 
 func pick_upgrades():

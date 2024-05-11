@@ -34,3 +34,6 @@ res://scenes/component/explosion_component.tscn
 res://scenes/component/explosion_component.gd
 res://scenes/ability/anvil_ability_controller/anvil_ability_controller.tscn
 res://scenes/ability/explosive_arrow_ability_controller/explosive_arrow_ability_controller.gd
+res://resources/upgrades/explosive_arrow.tres
+res://scenes/game_objects/player/player.gd
+res://scenes/auto_load/game_events.tscn

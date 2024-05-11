@@ -1,4 +1,4 @@
 extends Area2D
 class_name ExplosionComponent
 
-var damage = 4
+var damage = 8

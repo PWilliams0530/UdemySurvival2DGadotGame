@@ -94,8 +94,14 @@ func on_ability_upgrade_added(ability_upgrade : AbilityUpgrade, current_upgrades
 	if ability_upgrade is Ability:
 		var ability = ability_upgrade as Ability
 		abilities.add_child(ability.ability_controller_scene.instantiate())
+		if ability_upgrade.Id == "explosive_arrow":
+			var old_ability = $Abilities.get_node("ArrowAbilityController")
+			if old_ability == null:
+				return
+			old_ability.queue_free()
 	elif ability_upgrade.Id == "player_speed":
 		velocity_component.max_speed = base_speed + (base_speed * (current_upgrades["player_speed"]["quantity"] * .1))
+		
 		
 func on_arena_difficulty_increased(difficulty: int):
 	var health_regeneration_quantity = MetaProgression.get_upgrade_count("health_regeneration")
