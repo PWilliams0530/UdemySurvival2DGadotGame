@@ -307,6 +307,7 @@ collision_layer = 4
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExplosionComponent"]
+position = Vector2(-2.02815e-05, 8)
 shape = SubResource("CircleShape2D_l575d")
 disabled = true
 

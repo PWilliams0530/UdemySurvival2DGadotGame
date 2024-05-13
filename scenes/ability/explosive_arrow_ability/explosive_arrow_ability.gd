@@ -3,6 +3,7 @@ class_name ExplosiveArrowAbility
 
 @export var SPEED: int = 5
 @onready var hitbox_component = $DisposableHitboxComponent
+@onready var explosion_component = $ExplosionComponent
 @onready var sprite_object = $Visuals/Sprite2D as Sprite2D
 
 
@@ -18,3 +19,4 @@ func _physics_process(delta):
 	var delta_vector = Vector2(delta,0)  # Assuming delta affects x-axis
 	sprite_object.rotation = deg_to_rad(sprite_rotation_degrees)
 	global_position += (float(SPEED) * direction_vector) + delta_vector
+	explosion_component.global_position += (float(SPEED) * direction_vector) + delta_vector
