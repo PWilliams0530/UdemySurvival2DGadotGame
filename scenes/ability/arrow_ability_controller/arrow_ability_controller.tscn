@@ -1,12 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4d4rc2mrb7o5"]
+[gd_scene load_steps=3 format=3 uid="uid://ca1sp8ybc4ptq"]
 
 [ext_resource type="Script" path="res://scenes/ability/arrow_ability_controller/arrow_ability_controller.gd" id="1_idu5m"]
-[ext_resource type="PackedScene" uid="uid://2umanryv2dqm" path="res://scenes/ability/arrow_ability/arrow_ability.tscn" id="2_xejrg"]
+[ext_resource type="PackedScene" uid="uid://cmacrha1al83a" path="res://scenes/ability/arrow_ability/arrow_ability.tscn" id="2_xejrg"]
 
 [node name="ArrowAbilityController" type="Node"]
 script = ExtResource("1_idu5m")
 arrow_ability_scene = ExtResource("2_xejrg")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 1.25
+wait_time = 0.75
 autostart = true

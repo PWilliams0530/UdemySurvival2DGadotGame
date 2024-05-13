@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/ability/explosive_arrow_ability/explosive_arrow_ability.gd" id="1_8gtjp"]
 [ext_resource type="PackedScene" uid="uid://blf3sg8tdsaa" path="res://scenes/component/velocity_component.tscn" id="2_eu8gt"]
-[ext_resource type="Texture2D" uid="uid://dgr2bpnfkhj2k" path="res://scenes/ability/explosive_arrow_ability/arrow.png" id="3_mgke8"]
+[ext_resource type="Texture2D" uid="uid://dgr2bpnfkhj2k" path="res://scenes/ability/arrow_ability/arrow.png" id="3_r44p6"]
 [ext_resource type="PackedScene" uid="uid://b40uos7g0mix6" path="res://scenes/component/disposable_hitbox_component.tscn" id="4_n62lf"]
 [ext_resource type="PackedScene" uid="uid://beddxpswktduf" path="res://scenes/component/explosion_component.tscn" id="5_bqh80"]
 [ext_resource type="Texture2D" uid="uid://c0dpcdlobyp8r" path="res://resources/particle.png" id="6_qwnca"]
@@ -261,7 +261,7 @@ max_value = 1.5
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.267974, 1), 0.0, 0.0, 0, 0, Vector2(0.714597, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 4
 
-[sub_resource type="CurveTexture" id="CurveTexture_v24fq"]
+[sub_resource type="CurveTexture" id="CurveTexture_hhj57"]
 curve = SubResource("Curve_snvb3")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kv0r7"]
@@ -274,7 +274,7 @@ initial_velocity_min = 100.0
 initial_velocity_max = 200.0
 gravity = Vector3(0, 0, 0)
 scale_min = 0.5
-scale_curve = SubResource("CurveTexture_v24fq")
+scale_curve = SubResource("CurveTexture_hhj57")
 color = Color(0.996078, 0.682353, 0.203922, 1)
 
 [node name="ExplosiveArrowAbility" type="Node2D"]
@@ -294,7 +294,7 @@ acceleration = 100.0
 rotation = -1.5708
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
-texture = ExtResource("3_mgke8")
+texture = ExtResource("3_r44p6")
 
 [node name="DisposableHitboxComponent" parent="." instance=ExtResource("4_n62lf")]
 
@@ -307,7 +307,7 @@ collision_layer = 4
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExplosionComponent"]
-position = Vector2(-2.02815e-05, 8)
+position = Vector2(7, 1.00002)
 shape = SubResource("CircleShape2D_l575d")
 disabled = true
 

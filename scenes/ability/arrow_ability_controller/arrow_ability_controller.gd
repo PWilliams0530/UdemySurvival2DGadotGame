@@ -1,12 +1,11 @@
 extends Node
 
 const BASE_RANGE = 100
-const BASE_EXPLOSION_DAMAGE = 5
 const BASE_DAMAGE = 20
 var speed = 400
 
 @export var arrow_ability_scene : PackedScene
-@onready var arrow_ability : ExplosiveArrowAbility
+@onready var arrow_ability : ArrowAbility
 
 func _ready():
 	$Timer.timeout.connect(on_timer_timeout)

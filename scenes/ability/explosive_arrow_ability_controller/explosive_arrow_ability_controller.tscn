@@ -8,5 +8,5 @@ script = ExtResource("1_0c63e")
 arrow_ability_scene = ExtResource("2_m1c3h")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 1.25
+wait_time = 0.75
 autostart = true
