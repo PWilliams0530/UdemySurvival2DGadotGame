@@ -3,6 +3,7 @@ const SPAWN_RADIUS = 350 #spawn outside of window
 @export var basic_enemy_scene: PackedScene
 @export var wizard_enemy_scene: PackedScene
 @export var bat_enemy_scene: PackedScene
+@export var guard_enemy_scene: PackedScene
 @export var arena_time_manager: Node
 
 @onready var timer = $Timer
@@ -73,6 +74,10 @@ func on_arena_difficulty_increased(arena_difficulty: int):
 		enemy_table.add_item(bat_enemy_scene,8)
 		
 	if (arena_difficulty % 6) == 0:
+		var enemy = guard_enemy_scene.instantiate() as Node2D
+		var entities_layer = get_tree().get_first_node_in_group("entities_layer")
+		entities_layer.add_child(enemy) #add to parent (Main)
+		enemy.global_position = get_spawn_position() #assign to global position
 		number_to_spawn += 1
 	
 	

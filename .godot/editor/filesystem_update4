@@ -17,3 +17,8 @@ res://scenes/ability/arrow_ability/arrow_ability.tscn
 res://scenes/ability/explosive_arrow_ability_controller/explosive_arrow_ability_controller.tscn
 res://scenes/ability/explosive_arrow_ability/explosive_arrow_ability.gd
 res://scenes/ability/explosive_arrow_ability/explosive_arrow_ability 2.tscn
+res://scenes/manager/enemy_manager.gd
+res://scenes/manager/enemy_manager.tscn
+res://scenes/game_objects/guard_enemy/guard_enemy.tscn
+res://scenes/game_objects/bat_enemy/bat_enemy.tscn
+res://scenes/game_objects/wizard_enemy/wizard_enemy.tscn
